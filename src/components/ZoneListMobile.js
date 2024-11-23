@@ -42,7 +42,7 @@ function ZoneListMobile(props) {
           //delete api
           axios
             .post(
-              "http://localhost:8080/zone/delete",
+              "https://custom-inventory-api-408688973761.us-central1.run.app/zone/delete",
               payload
             )
             .then((resp) => {
@@ -73,7 +73,7 @@ function ZoneListMobile(props) {
     };
     await axios
       .post(
-        "http://localhost:8080/zone/create",
+        "https://custom-inventory-api-408688973761.us-central1.run.app/zone/create",
         payload
       )
       .then((res) => {

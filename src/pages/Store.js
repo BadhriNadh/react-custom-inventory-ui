@@ -25,7 +25,7 @@ function Store() {
     };
     axios
       .post(
-        "http://localhost:8080/store/open",
+        "https://custom-inventory-api-408688973761.us-central1.run.app/store/open",
         payload
       )
       .then((resp) => {

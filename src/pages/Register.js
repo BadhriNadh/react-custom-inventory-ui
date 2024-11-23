@@ -22,7 +22,7 @@ export default function Register() {
     console.log(payload);
     axios
       .post(
-        "http://localhost:8080/store/create",
+        "https://custom-inventory-api-408688973761.us-central1.run.app/store/create",
         payload
       )
       .then((resp) => {

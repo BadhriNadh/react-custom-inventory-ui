@@ -46,7 +46,7 @@ function ItemsList(props) {
     };
     axios
       .post(
-        "http://localhost:8080/store/open",
+        "https://custom-inventory-api-408688973761.us-central1.run.app/store/open",
         payload
       )
       .then((response) => {
@@ -84,7 +84,7 @@ function ItemsList(props) {
         };
         axios
           .post(
-            "http://localhost:8080/item/delete",
+            "https://custom-inventory-api-408688973761.us-central1.run.app/item/delete",
             payload
           )
           .then((resp) => {
@@ -117,7 +117,7 @@ function ItemsList(props) {
 
         axios
           .post(
-            "http://localhost:8080/item/update",
+            "https://custom-inventory-api-408688973761.us-central1.run.app/item/update",
             payload
           )
           .then((response) => {
@@ -149,7 +149,7 @@ function ItemsList(props) {
     };
     axios
       .post(
-        "http://localhost:8080/item/add",
+        "https://custom-inventory-api-408688973761.us-central1.run.app/item/add",
         payload
       )
       .then((res) => {
@@ -182,7 +182,7 @@ function ItemsList(props) {
         console.log(payload);
         axios
           .post(
-            "http://localhost:8080/item/update",
+            "https://custom-inventory-api-408688973761.us-central1.run.app/item/update",
             payload
           )
           .then((response) => {
